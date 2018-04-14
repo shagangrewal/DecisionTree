@@ -181,7 +181,7 @@ public class DecisionTree implements Classifier {
         return "The decision trees that are used in random forests, like to predict a game winner in sports";
     }
     
-    public String Authoor(){
+    public String Author(){
         return "Shagan Grewal";
     }
     
@@ -236,7 +236,7 @@ public class DecisionTree implements Classifier {
             Classifier c = new DecisionTree(d, false);
             System.out.println("Testing Classifier on " + d.crossEx.length+" examples");
             int correct = 0;
-            for(int ec = 0;ex<crossEx.length;ex++){
+            for(int ex = 0;ex<crossEx.length;ex++){
                 if(c.predict(crossEx[ex])==crossLabel[ex])
                     correct++;
             }
